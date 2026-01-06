@@ -9,9 +9,13 @@
 /* shared style */
 
 .logo{
-    font-weight: 800;
-    font-size: 45px;
+    
+    font-size: 40px;
+    color: #474747;
 
+}
+.logo h2{
+    font-weight: 900;
 }
 .logo span{
     color: #FD6E0A;
@@ -26,6 +30,11 @@
     color: white;
     cursor: pointer;
 }
+.btn:hover{
+    background-color: #e65c00;
+    transition: 0.4s;
+    box-shadow: 0 6px 20px 0 rgba(253, 110, 10, 0.4);
+}
 .contact{
     background-color: white;
     color: #FD6E0A;
@@ -38,8 +47,9 @@
 }
 .section-heading h2{
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 30px;
+    color: #181818;
 }
 .section-heading p{
     font-size: 18px;
@@ -54,8 +64,9 @@
 
 header{
     background-color: #FFF8F3;
-    background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
-    background-position: top left, bottom right;
+    background: url("../images/developer.png"), #FFF8F3;
+    background-position: 23px 5px, bottom left -200px;
+    
     
     background-repeat: no-repeat;
     padding-top: 50px;
@@ -83,13 +94,13 @@ nav .menu a{
 }
 #banner{
     /* border: 1px solid red; */
-    margin: 47px 38px 0 230px;
+    margin: 47px 100px 0 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 #banner .banner-content{
-    max-width: 585px;
+    max-width: 785px;
 }
 #banner .banner-content h2{
     font-size: 45px;
@@ -99,10 +110,24 @@ nav .menu a{
 }
 #banner .banner-content h1{
     font-size: 85px;
-    font-weight: 800px;
-    color: #181818;
+    font-weight: 900;
+    color: #2d2d2d;
     margin-bottom: 20px;
+    
 }
+
+.hossain{
+    color: #FD6E0A;
+    font-weight: 300;
+}
+
+.hossain:hover{
+    color: #474747;
+    font-weight: 500;
+    transition: 0.3s;
+    letter-spacing: 3px;
+}
+
 #banner .banner-content p{
     font-size: 18px;
     font-weight: 100px;
@@ -114,9 +139,10 @@ nav .menu a{
     gap: 30px;
 
 }
-#banner .banner-content .banner-image{
-    max-width: 584px;
+.banner-image img{
+    width: 584px;
     vertical-align: middle;
+
 }
 #about{
     padding-top: 130px;
@@ -134,8 +160,8 @@ nav .menu a{
     justify-content: space-around;
     color:#757575 ;
 }
-.about-info p{
-    font-size: 20px;
+.info-card p{
+    font-size: 17px;
     line-height: 30px;
 }
 #skills{
@@ -173,6 +199,9 @@ nav .menu a{
     line-height: 28px;
     color: #757575;
 }
+.education, .experience{
+    max-width: 557px;
+}
 #resume .section-heading{
     margin-top: 130px;
 }
@@ -208,11 +237,19 @@ nav .menu a{
     text-align: center;
     margin-bottom: 113px;
 }
+footer{
+    background-color: #FFF8F3;
+    padding: 130px 230px;
+    
+}
 .footer{
-    /* background-color: #FFF8F3; */
+    
     display: flex;
     max-width: 1140px;
-    margin: 130px auto;
+    /* margin: 130px auto; */
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
 }
 .footer-info h2{
     margin-bottom: 20px;
@@ -241,8 +278,8 @@ nav .menu a{
 input{
     padding: 10px 30px;
     border-radius: 5px;
-    border: none;
-    box-shadow: 0 6px 50px 0 rgba(128, 128, 128, 0.181);
+    border: none; 
+    font-size: 16px;
     
     
 }
@@ -251,7 +288,7 @@ textarea{
     margin-bottom:30px;
     border-radius: 5px;
     border: none;
-    box-shadow: 0 6px 50px 0 rgba(128, 128, 128, 0.181);
+    font-size: 16px;
 
 }
 
